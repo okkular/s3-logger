@@ -3,7 +3,7 @@
  * Created Date: Tue Mar 15 2022
  * Author: Ashwin Rao (arao@okkular.io)
  * -----
- * Last Modified: Sun Apr 10 2022
+ * Last Modified: Tue Apr 12 2022
  * Modified By: Ashwin Rao
  * -----
  * MIT License
@@ -57,7 +57,7 @@ type s3Logger struct {
 }
 
 func (l *s3Logger) Logw(keysAndValues ...interface{}) {
-	log.Printf("In S3LoggerAPI.Infow")
+	log.Printf("In S3LoggerAPI.Logw")
 	l.log.Sugar().Infow("", keysAndValues...)
 }
 
